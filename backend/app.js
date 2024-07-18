@@ -31,6 +31,7 @@ mongoose
   .catch(() => console.log("Connexion à MongoDB échouée !"));
 
 app.use("/api/stuff", stuffRoutes);
+
 app.use("/api/auth", userRoutes);
 
 module.exports = app;
